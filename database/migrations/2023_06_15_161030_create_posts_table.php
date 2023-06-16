@@ -13,8 +13,8 @@ return new class extends Migration {
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('slug');
+            $table->string('title')->index();
+            $table->string('slug')->index();
             $table->text('content');
             $table->foreignIdFor(User::class, 'user_id');
             $table->timestamps();

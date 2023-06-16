@@ -14,7 +14,7 @@ return new class extends Migration {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('title')->index();
-            $table->text('slug');
+            $table->text('slug')->index();
             $table->float('price')->index();
             $table->text('summery');
             $table->foreignIdFor(User::class, 'user_id');

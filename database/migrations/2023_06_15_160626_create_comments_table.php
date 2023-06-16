@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->text('content');
             $table->foreignIdFor(Product::class, 'product_id')->nullable();
             $table->foreignIdFor(Post::class, 'post_id')->nullable();
+            $table->boolean('show')->default(true)->index();
             $table->timestamps();
         });
     }
