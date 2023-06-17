@@ -9,7 +9,9 @@
         "awcodes/filament-tiptap-editor": "^2.5",
         "bezhansalleh/filament-language-switch": "^1.0",
         "filament/filament": "^2.17",
+        "filament/spatie-laravel-media-library-plugin": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
+        "itsgoingd/clockwork": "^5.1",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8"
