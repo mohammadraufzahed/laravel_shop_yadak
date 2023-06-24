@@ -1,8 +1,6 @@
-<nav class="w-full h-max font-yekan-bakh">
-    <a href="#" class="">
-        <div class="w-full h-12 bg-green-400 flex items-center justify-center gap-2">
-            <img src="{{ Vite::asset('resources/images/whatsapp.svg') }}" />
-            <span class="font-medium text-sm text-white">ارتباط در واتساپ</span>
-        </div>
-    </a>
+<nav
+    class="w-full flex flex-row items-center justify-between p-2 h-max gap-4 font-yekan-bakh xl:pt-5 xl:justify-start xl:gap-10">
+    <img class="w-[120px] h-[50px] xl:w-[150px] xl:h-[60px]" src="{{ Vite::asset('resources/images/logo.png') }}" />
+    <x-sidebar-mobile />
+    <x-sidebar-desktop />
 </nav>

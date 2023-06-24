@@ -7,10 +7,11 @@
 
     <title>@yield('title')</title>
     @vite('resources/css/app.scss')
+    <script src="//unpkg.com/alpinejs"></script>
 </head>
 
 <body class="antialiased">
-
+    <x-whatsapp />
     <x-navbar />
     <main>
         @yield('content')
