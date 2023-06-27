@@ -13,7 +13,8 @@ class SidebarItemsDesktop extends Component
      */
     public function __construct(
         public $dropdown = false,
-        public $items = []
+        public $items = [],
+        public $first = false
     ) {
         //
     }

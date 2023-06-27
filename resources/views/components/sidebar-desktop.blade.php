@@ -1,8 +1,8 @@
-<div class="w-max h-full flex flex-row items-center justify-center gap-8">
+<div class="w-max h-full flex-row items-center justify-center gap-8 hidden xl:flex">
     <x-sidebar-items-desktop href="/">
         صفحه اصلی
     </x-sidebar-items-desktop>
-    <x-sidebar-items-desktop dropdown :items="[
+    <x-sidebar-items-desktop first dropdown :items="[
         [
             'label' => 'قطعات آریو',
             'href' => '#',
