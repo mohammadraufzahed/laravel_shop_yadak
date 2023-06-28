@@ -10,12 +10,14 @@
     <script src="//unpkg.com/alpinejs"></script>
 </head>
 
-<body class="antialiased">
+<body class="antialiased font-yekan-bakh">
     <x-whatsapp />
-    <x-navbar />
-    <main>
-        @yield('content')
-    </main>
+    <div class="w-full h-full max-w-[1536px] mx-auto">
+        <x-navbar />
+        <main>
+            @yield('content')
+        </main>
+    </div>
     <x-phone />
 </body>
 
