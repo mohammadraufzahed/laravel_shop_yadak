@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <x-main-hero />
+    <x-index.main-hero />
+    <x-index.brands />
 @endsection
