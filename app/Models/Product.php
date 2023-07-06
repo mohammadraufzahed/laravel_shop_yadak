@@ -17,7 +17,8 @@ class Product extends Model implements HasMedia
         'slug',
         'price',
         'summery',
-        'user_id'
+        'user_id',
+        'category_id'
     ];
 
     public function user(): BelongsTo
@@ -28,5 +29,10 @@ class Product extends Model implements HasMedia
     public function comments(): HasMany
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function category(): BelongsTo
+    {
+        return $this->belongsTo(Category::class);
     }
 }
