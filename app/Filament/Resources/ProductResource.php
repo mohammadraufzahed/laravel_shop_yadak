@@ -38,6 +38,7 @@ class ProductResource extends Resource
                     Forms\Components\TextInput::make('price')->numeric()->minValue(0)->required()->label('قیمت'),
                     Forms\Components\TextInput::make('summery')->required()->label('خلاصه'),
                     SpatieMediaLibraryFileUpload::make('image')->collection('images')->enableReordering()->multiple()->responsiveImages()->label('عکس ها'),
+                    Forms\Components\Select::make('category_id')->relationship('category', 'title')->label('دسته بندی'),
                     Forms\Components\Select::make('user_id')->relationship('user', 'name')->label('کاربر')->hiddenOn('edit'),
                 ])
             ]);
